@@ -1,5 +1,7 @@
-##React Weather App
-#What is used in this app;
+## React Weather App
+
+# What is used in this app;
+
 -useState
 -useEffect
 -useContext
