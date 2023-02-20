@@ -1,6 +1,6 @@
-## React Weather App
+# React Weather App
 
-# What is used in this app;
+## What is used in this app;
 
 -useState
 -useEffect
