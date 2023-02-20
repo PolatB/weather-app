@@ -1,38 +1,133 @@
 .App {
+  box-sizing: border-box;
+  display: table;
+  margin: 0 auto;
+  width: auto;
+  height: auto;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.dropdown {
+  margin-top: 2rem;
+  width: 700px;
+  height: 70px;
+  background-color: #F6FAFD;
+}
+
+.dropdownBox {
+  margin: 1rem;
+  width: 10rem;
+  height: 2rem;
+  border: 1px solid #E5E7EB;
+  border-radius: 5px;
+  font-weight: bold;
+  box-shadow: 1px 1px #ccc;
+}
+
+.dateContainer {
+  width: 100px;
+  margin: 0;
   text-align: center;
+  font-size: 1rem;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.date {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-wrap: nowrap;
+  margin-top: 1rem;
+}
+
+.maping:first-child{
+  border: 2px solid #E5E7EB;
+  border-radius: 5px;
+  background-color: #F6FAFD;
+}
+
+
+.images {
+  width: 100px;
+  height: 50px;
+  object-fit: cover;
+}
+
+.soft {
+  color: #C5C5C5;
+}
+
+.dark {
+  color: black;
+  font-weight: bold;
+}
+
+.footerContainer {
+  height: 50px;
+  display: flex;
+  flex-wrap: nowrap;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  background-color: #F6FAFD;
+  margin-top: 1rem;
 }
 
-.App-link {
-  color: #61dafb;
+
+.footerSpan a{
+  text-decoration: none;
+  color: #374151;
+  font-weight: bold;
+  font-size: 1rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media screen and (max-width: 767px) {
+  .App{
+    margin: 0;
   }
-  to {
-    transform: rotate(360deg);
+
+  .dropdown{
+    width: 360px;
+  }
+
+  .dropdownBox{
+    font-size: 1rem;
+  }
+
+  .dateContainer{
+    width: 350px;
+  }
+
+  .date {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 1rem;
+  }
+
+  .maping:first-child{
+    border: 2px solid #E5E7EB;
+    border-radius: 5px;
+    background-color: #F6FAFD;
+  }
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .App{
+    margin: 0;
+    margin-left: 1rem;
+  }
+  
+  .dropdown{
+    width: 700px;
+  }
+  .dropdownBox{
+    margin: 1rem;
+    font-size: 1.2rem;
+  }
+  .dateContainer{
+    font-size: 1.2rem;
+  }
+
+  .maping:first-child{
+    border: 2px solid #E5E7EB;
+    border-radius: 5px;
+    background-color: #F6FAFD;
   }
 }
